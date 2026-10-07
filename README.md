@@ -19,7 +19,7 @@
 
 ## 安装
 
-从本仓库的 **Releases** 下载 `miaomiaopounce-1.0.0.apk`，传到平板打开安装。允许文件管理器安装该 APK 后即可使用。最低 Android 8.0（API 26）。
+下载 [v1.0.0 安卓安装包](https://github.com/hanxiaoyu-cmd/miaomiaopounce/releases/download/v1.0.0/miaomiaopounce-1.0.0.apk)，传到平板打开安装。允许文件管理器安装该 APK 后即可使用。最低 Android 8.0（API 26）。[发布页](https://github.com/hanxiaoyu-cmd/miaomiaopounce/releases/tag/v1.0.0)同时提供 SHA-256 校验文件。
 
 先打开「猫爪触摸测试」：用手指检查，再让猫自愿接触。看到圆圈和轨迹，说明平板确实上报了触摸。真实猫爪的识别效果受触控硬件、接触方式及保护膜影响，扩大软件判定范围不能修复硬件未上报的触摸。
 

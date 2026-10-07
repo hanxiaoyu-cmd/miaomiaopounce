@@ -9,6 +9,8 @@
 | Debug / Release 构建 | 通过 | Kotlin 编译、资源处理、R8 优化、APK 打包 |
 | 逻辑测试 | 10 / 10 通过 | 命中与未命中、宽松判定、两触点、重复命中保护、延迟刷新、避开按住区域、计时终止、旋转缩放、四主题和三档速度边界、隐藏目标、非法输入 |
 | 安卓交互测试 | 7 / 7 通过 | 四主题实际画面与落爪、设置跨重启保存、触摸诊断与清空、自然到时单次记录、长按主人入口及可见答案列表、原生双指事件、旋转和短暂后台中断的暂停确认 |
+| GitHub Android 12 / API 31 | 7 / 7 通过 | Google APIs 平板模拟器运行完整安卓交互测试 |
+| GitHub Android 16 / API 36 | 7 / 7 通过 | Google APIs 平板模拟器运行完整安卓交互测试 |
 | Android Lint | 0 错误 | 未禁用错误检测；保留固定依赖版本提示、中文文本国际化建议和可选 KTX 建议等非阻断警告 |
 | Release 签名 | 通过 | 独立 RSA 3072 位证书，APK Signature Scheme v2；最低 API 26 |
 | Release 冷启动 | 通过 | 在模拟器上安装并真实启动优化后的正式 APK |
@@ -26,7 +28,7 @@ gradle testDebugUnitTest assembleDebug assembleRelease lintDebug connectedDebugA
 BUILD SUCCESSFUL
 ```
 
-GitHub 工作流额外配置 Android 12 / API 31 与 Android 16 / API 36 的平板模拟器测试，运行状态以仓库 Actions 为准，不能把“已配置”当作“已通过”。
+[GitHub 云端验收运行 #37570501264](https://github.com/hanxiaoyu-cmd/miaomiaopounce/actions/runs/37570501264)已完成，整体结果为 `success`：构建、逻辑测试、Lint，以及 Android 12 / API 31、Android 16 / API 36 各 7 项交互测试全部通过。测试源码提交为 `c85d64ec85c2e5e099314b13d641261b91d8446e`；本报告之后的更新仅补充文档，正式 APK 的游戏源码与该提交一致。
 
 ## 真实界面
 

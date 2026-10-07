@@ -53,6 +53,29 @@
     "result_summary": "passed",
     "touch_diagnostic_clear": "passed"
   },
+  "github_actions": {
+    "run_id": 37570501264,
+    "url": "https://github.com/hanxiaoyu-cmd/miaomiaopounce/actions/runs/37570501264",
+    "tested_commit": "c85d64ec85c2e5e099314b13d641261b91d8446e",
+    "conclusion": "success",
+    "build_unit_tests_and_lint": "passed",
+    "device_tests": [
+      {
+        "android_version": "12",
+        "api": 31,
+        "passed": 7,
+        "failed": 0,
+        "job_url": "https://github.com/hanxiaoyu-cmd/miaomiaopounce/actions/runs/37570501264/job/112628230585"
+      },
+      {
+        "android_version": "16",
+        "api": 36,
+        "passed": 7,
+        "failed": 0,
+        "job_url": "https://github.com/hanxiaoyu-cmd/miaomiaopounce/actions/runs/37570501264/job/112628230583"
+      }
+    ]
+  },
   "apk": {
     "name": "miaomiaopounce-1.0.0.apk",
     "bytes": 239044,
