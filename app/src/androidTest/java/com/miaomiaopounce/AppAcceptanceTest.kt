@@ -117,6 +117,9 @@ class AppAcceptanceTest {
             val a = v.engine.prey[0]; val b = v.engine.prey[1]
             a.x = v.width * 0.30f; a.y = v.height * 0.40f
             b.x = v.width * 0.70f; b.y = v.height * 0.60f
+            // Test two visible targets, independent of randomized hiding before the UI becomes idle.
+            listOf(a, b).forEach { it.phase = MotionPhase.RESTING; it.phaseRemaining = 30f }
+            assertTrue(a.visible && b.visible)
             val properties = arrayOf(
                 MotionEvent.PointerProperties().apply { id = 7; toolType = MotionEvent.TOOL_TYPE_FINGER },
                 MotionEvent.PointerProperties().apply { id = 41; toolType = MotionEvent.TOOL_TYPE_FINGER }
