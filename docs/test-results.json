@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-07",
+  "version": "1.0.0",
+  "android_min_api": 26,
+  "android_target_api": 36,
+  "local_device": {
+    "kind": "MuMu emulator",
+    "android_version": "12",
+    "api": 31,
+    "viewport_sizes": [
+      "1280x800",
+      "800x1280"
+    ]
+  },
+  "unit_tests": {
+    "passed": 10,
+    "failed": 0,
+    "cases": [
+      "multiTouchCapturesTwoIndependentTargets",
+      "holdDoesNotCaptureTargetsDuringSimulation",
+      "invalidInputsAndSettingsDoNotCorruptSimulation",
+      "noHidingPresetKeepsAllTargetsVisible",
+      "noTimeAdvancesUnlessUpdatedAndSessionStopsExactly",
+      "delayedRespawnAvoidsHeldPawAndMaintainsCount",
+      "hidingPreyCannotBeCaptured",
+      "boundsHoldAcrossThemesPacesAndLargeResize",
+      "forgivingHitAreaAndMissesAreSeparate",
+      "capturesOnContactAndNeverTwice"
+    ]
+  },
+  "instrumented_tests": {
+    "passed": 7,
+    "failed": 0,
+    "cases": [
+      "heldCornerOpensGuardAndRequiresCorrectAnswer",
+      "allThemesRenderAndPawTapCaptures",
+      "settingsPersistAcrossActivityRecreation",
+      "touchDiagnosticCountsAndClears",
+      "canvasSurvivesRotationAndBackgroundAlwaysRequiresResume",
+      "twoPawsCaptureIndependentlyThroughNativeTouchEvents",
+      "naturalTimeoutShowsSummaryOnce"
+    ]
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 17
+  },
+  "signed_release_smoke": {
+    "release_cold_launch": "passed",
+    "fish_paw_capture": "passed",
+    "background_return_paused": "passed",
+    "owner_back_guard_and_exit": "passed",
+    "result_summary": "passed",
+    "touch_diagnostic_clear": "passed"
+  },
+  "apk": {
+    "name": "miaomiaopounce-1.0.0.apk",
+    "bytes": 239044,
+    "sha256": "c8e22f9e28894010656cd3c9c8dbff5269ea0a1c2d4be651a229ca713ce08bec"
+  },
+  "not_verified": [
+    "Physical Xiaomi tablet paw detection",
+    "HyperOS screen-pinning gestures",
+    "Actual cat interest",
+    "Physical-device sustained thermal and audio latency"
+  ]
+}
